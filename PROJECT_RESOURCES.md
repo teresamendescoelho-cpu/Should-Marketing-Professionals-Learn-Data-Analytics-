@@ -2,9 +2,32 @@
 
 ## Project Title
 
-**Should Marketing Professionals Learn Data Analytics?**
+# **Should Marketing Professionals Learn Data Analytics?**
 
-*A Machine Learning Analysis of Education, Technical Skills, and Career Success*
+### *A Machine Learning Analysis of Education, Technical Skills, and Career Success*
+
+---
+
+# 📋 Project Management
+
+This project is planned and managed using a **Trello Kanban Board**, allowing tasks, milestones, and project progress to be organized throughout the Machine Learning project.
+
+### Trello Board
+
+**Project Board:**
+**The Importance and Correlation Between Education (Marketing Degree, Master's Degree, Data Analytics Bootcamp) and Career Success**
+
+**Board Link:**
+https://trello.com/b/kPnXr8jv/the-importance-and-correlation-between-education-marketing-degree-masters-degree-data-analytics-bootcamp-and-career-success
+
+### Trello is used to:
+
+* Plan project milestones
+* Organize daily tasks
+* Track project progress
+* Monitor completed deliverables
+* Manage deadlines
+* Support Agile project management
 
 ---
 
@@ -12,36 +35,39 @@
 
 ## Candidate Dataset 1
 
-**Job Salary Prediction Dataset**
+### Job Salary Prediction Dataset
 
-Purpose:
+**Purpose**
 
-* Main dataset for salary prediction using Machine Learning.
-* Analyze how education, experience, certifications, and technical skills influence career success.
+* Main dataset for Machine Learning.
+* Predict salary using education, work experience, certifications, technical skills, and other professional characteristics.
+* Analyze which variables contribute most to career success.
 
-Source:
+**Source**
 
-* https://www.kaggle.com/datasets/nalisha/job-salary-prediction-dataset
+https://www.kaggle.com/datasets/nalisha/job-salary-prediction-dataset
 
 ---
 
 ## Candidate Dataset 2
 
-**AI & Data Science Job Market Dataset (2020–2026)**
+### AI & Data Science Job Market Dataset (2020–2026)
 
-Purpose:
+**Purpose**
 
-* Explore current market trends.
-* Analyze demand for technical skills.
-* Support the business understanding and exploratory data analysis.
+* Analyze trends in the Data Analytics and AI job market.
+* Explore employer demand for technical skills.
+* Support the Business Understanding and Exploratory Data Analysis phases.
 
-Source:
+**Source**
 
-* https://www.kaggle.com/datasets/shree0910/ai-and-data-science-job-market-dataset-20202026
+https://www.kaggle.com/datasets/shree0910/ai-and-data-science-job-market-dataset-20202026
 
 ---
 
 # 💻 Software
+
+Development Environment
 
 * Visual Studio Code
 * Jupyter Notebook
@@ -77,7 +103,9 @@ Source:
 
 ---
 
-# 📈 Machine Learning Models
+# 🤖 Machine Learning Models
+
+The following models will be explored and compared:
 
 * Linear Regression
 * Decision Tree Regressor
@@ -88,6 +116,8 @@ Source:
 ---
 
 # ⚙️ Machine Learning Techniques
+
+The project will include:
 
 * Data Cleaning
 * Exploratory Data Analysis (EDA)
@@ -104,7 +134,9 @@ Source:
 
 ---
 
-# 📊 Evaluation Metrics
+# 📈 Evaluation Metrics
+
+Model performance will be evaluated using:
 
 * R² Score
 * Mean Absolute Error (MAE)
@@ -115,36 +147,101 @@ Source:
 
 # 🌐 Websites & References
 
+## Project Management
+
+* Trello
+
+  * https://trello.com
+  * Project Board:
+    https://trello.com/b/kPnXr8jv/the-importance-and-correlation-between-education-marketing-degree-masters-degree-data-analytics-bootcamp-and-career-success
+
+---
+
+## Data Sources
+
+* Kaggle
+
+  * https://www.kaggle.com
+
+---
+
 ## Development
 
-* GitHub — https://github.com
-* Kaggle — https://www.kaggle.com
+* GitHub
+
+  * https://github.com
+
+---
 
 ## Documentation
 
-* Python Documentation — https://docs.python.org
-* Pandas Documentation — https://pandas.pydata.org/docs/
-* NumPy Documentation — https://numpy.org/doc/
-* Scikit-learn Documentation — https://scikit-learn.org/stable/
-* Matplotlib Documentation — https://matplotlib.org/stable/
-* Seaborn Documentation — https://seaborn.pydata.org/
-* XGBoost Documentation — https://xgboost.readthedocs.io/
+* Python Documentation
+
+  * https://docs.python.org
+
+* Pandas Documentation
+
+  * https://pandas.pydata.org/docs/
+
+* NumPy Documentation
+
+  * https://numpy.org/doc/
+
+* Scikit-learn Documentation
+
+  * https://scikit-learn.org/stable/
+
+* Matplotlib Documentation
+
+  * https://matplotlib.org/stable/
+
+* Seaborn Documentation
+
+  * https://seaborn.pydata.org/
+
+* XGBoost Documentation
+
+  * https://xgboost.readthedocs.io/
+
+---
 
 ## Learning Resources
 
 * Ironhack Course Materials
-* Stack Overflow — https://stackoverflow.com
+* Stack Overflow
+
+  * https://stackoverflow.com
 
 ---
 
 # 📁 Repository Structure
 
 ```text
+marketing-career-success/
+
 ├── data/
+│   ├── raw/
+│   └── processed/
+│
 ├── notebooks/
+│   ├── 01_business_understanding.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_eda.ipynb
+│   ├── 04_feature_engineering.ipynb
+│   ├── 05_modeling.ipynb
+│   └── 06_model_evaluation.ipynb
+│
 ├── src/
-├── images/
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── models.py
+│   ├── evaluation.py
+│   └── visualization.py
+│
 ├── presentation/
+│
+├── images/
+│
 ├── requirements.txt
 ├── README.md
 ├── PROJECT_RESOURCES.md
@@ -155,4 +252,4 @@ Source:
 
 # 📝 Notes
 
-This document will be updated throughout the project as additional datasets, tools, libraries, and references are incorporated.
+This document will be updated throughout the project as additional datasets, software, libraries, references, and resources are incorporated.
