@@ -1,1 +1,32 @@
+# Data manipulation
+
+pandas
+numpy
+
+# Data visualization
+
+matplotlib
+seaborn
+
+# Machine Learning
+
+scikit-learn
+
+# Optional advanced model
+
+xgboost
+
+# Jupyter
+
+notebook
+jupyterlab
+
+# Model explainability
+
+shap
+
+# Utilities
+
+scipy
+joblib
 
