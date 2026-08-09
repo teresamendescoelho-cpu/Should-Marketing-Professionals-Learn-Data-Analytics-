@@ -195,6 +195,19 @@ marketing-career-success-ml/
 
 **Teresa Mendes Coelho**
 
+
+
+
+💡 Recommendations
+
+Based on the findings of this project:
+
+Marketing professionals should invest in technical skills such as SQL and Python to improve their career opportunities.
+Employers should prioritize practical technical competencies alongside formal education when hiring for data-driven marketing roles.
+Continuous learning through bootcamps and certifications can complement traditional university education and support career growth in an increasingly data-driven job market.
+
+This gives your project a real business conclusion, which is exactly what companies expect from a data analyst—not just predicting outcomes, but turning them into actionable recommendations.
+
 Ironhack Data Analytics Bootcamp
 
 2026
