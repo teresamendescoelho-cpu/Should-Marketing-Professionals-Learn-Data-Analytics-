@@ -126,7 +126,7 @@ The project will include:
 * One-Hot Encoding
 * Label Encoding
 * Standardization / Scaling
-* Train-Test Split
+* Train-Test 
 * Cross Validation
 * GridSearchCV
 * Hyperparameter Tuning
