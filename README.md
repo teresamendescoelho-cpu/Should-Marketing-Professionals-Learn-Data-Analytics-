@@ -183,12 +183,27 @@ marketing-career-success-ml/
 ---
 
 # 🚀 Future Improvements
+Future versions of the project could:
 
-* Include additional datasets from different industries.
-* Compare marketing careers with other professional fields.
-* Deploy the final model as a web application.
-* Build an interactive dashboard using Power BI or Streamlit.
+Increase the sample size substantially.
 
+Include data from multiple countries and industries.
+
+Add more detailed technical-skill variables.
+
+Compare Marketing professionals with other professional groups.
+
+Include longitudinal career data.
+
+Investigate additional measures of career success beyond Starting Salary.
+
+Test additional Machine Learning algorithms.
+
+Perform more extensive hyperparameter tuning.
+
+Deploy the final predictive model as an interactive application.
+
+Expand the Tableau dashboard with additional business intelligence views.
 ---
 
 # 👩‍💻 Author
