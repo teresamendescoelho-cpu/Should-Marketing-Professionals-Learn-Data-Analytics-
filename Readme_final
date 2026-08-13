@@ -1,0 +1,418 @@
+# 📊 Should Marketing Professionals Learn Data Analytics?
+
+### A Machine Learning Analysis of Education, Technical Skills and Career Success
+
+---
+
+## 📖 Project Overview
+
+In an increasingly data-driven job market, marketing professionals are expected to combine traditional marketing knowledge with analytical and technical skills.
+
+This project explores the relationship between **education, skills, internships and career development** and **Starting Salary**, using Data Analytics and Machine Learning techniques.
+
+The project was inspired by my own transition from **Marketing to Data Analytics through the Ironhack Data Analytics Bootcamp**. Rather than relying on personal assumptions, the objective is to use data to explore how professional and educational characteristics are associated with career outcomes.
+
+The central question is:
+
+> **Should Marketing Professionals Learn Data Analytics?**
+
+To explore this question, six supervised Machine Learning regression models were developed and compared to predict Starting Salary and identify the factors that contribute most strongly to the predictions.
+
+---
+
+# 🎯 Business Problem
+
+Marketing is becoming increasingly data-driven. Professionals are expected to understand data, identify patterns, measure performance and support business decisions with evidence.
+
+This raises an important career question:
+
+> **Can Data Analytics skills provide Marketing Professionals with a valuable framework for understanding and evaluating career opportunities?**
+
+This project does not attempt to prove that learning Data Analytics directly causes higher salaries. Instead, it uses available career and education data to:
+
+* Identify factors associated with Starting Salary.
+* Build predictive models for Starting Salary.
+* Compare different Machine Learning approaches.
+* Identify the most important predictors.
+* Translate the results into practical business and career insights.
+
+---
+
+# ❓ Research Questions
+
+The analysis focuses on the following questions:
+
+1. Which factors are most strongly associated with Starting Salary?
+2. How does career progression relate to Starting Salary?
+3. What role do internships play in salary prediction?
+4. Can Machine Learning accurately predict Starting Salary from the available characteristics?
+5. Which regression model provides the best balance between predictive performance and generalization?
+6. What can data-driven analysis teach Marketing Professionals about career development?
+
+---
+
+# 📂 Dataset
+
+The analysis uses the **Education & Career Success** dataset.
+
+The final dataset contains:
+
+* **44 observations**
+* **17 original variables**
+* **Starting Salary** as the target variable
+
+Relevant variables include:
+
+### Education
+
+* Field of Study
+* University GPA
+* High School GPA
+* SAT Score
+
+### Skills & Development
+
+* Certifications
+* Projects Completed
+* Soft Skills Score
+* Internships Completed
+* Networking Score
+
+### Career
+
+* Current Job Level
+* Years to Promotion
+* Job Offers
+* Career Satisfaction
+* Work Life Balance
+
+### Other Variables
+
+* Gender
+* Entrepreneurship
+* Student ID
+
+For the final Machine Learning models, categorical variables were encoded and `Student_ID` was excluded from the predictive features.
+
+The final encoded feature set used for modelling contained:
+
+* `Internships_Completed`
+* `Years_to_Promotion`
+* `Gender_Male`
+* `Current_Job_Level_Mid`
+
+---
+
+# 🛠 Technologies Used
+
+### Data Analysis
+
+* Python
+* Jupyter Notebook
+* Pandas
+* NumPy
+
+### Data Visualization
+
+* Matplotlib
+* Seaborn
+* Tableau
+
+### Machine Learning
+
+* Scikit-learn
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+# 📊 Project Workflow
+
+## 1. Business Understanding
+
+* Defined the business problem.
+* Established the research questions.
+* Defined Starting Salary as the prediction target.
+* Connected the analysis to the career transition from Marketing to Data Analytics.
+
+## 2. Data Understanding
+
+* Inspected the dataset structure.
+* Examined variable types.
+* Analysed numerical and categorical variables.
+* Investigated relationships between career characteristics and salary.
+
+## 3. Data Preparation
+
+* Removed the identifier variable from the modelling features.
+* Encoded categorical variables.
+* Prepared the feature matrix and target variable.
+* Created training and testing datasets.
+
+## 4. Train-Test Split
+
+The dataset was divided into:
+
+* **80% training data — 35 observations**
+* **20% test data — 9 observations**
+
+A `random_state` of 42 was used to ensure reproducibility.
+
+## 5. Machine Learning
+
+Six supervised regression models were evaluated:
+
+### Linear Models
+
+* Linear Regression
+* Ridge Regression
+* Lasso Regression
+
+### Tree-Based Models
+
+* Decision Tree Regression
+* Random Forest Regression
+* Gradient Boosting Regression
+
+## 6. Cross-Validation
+
+Each model was evaluated using **5-fold cross-validation**.
+
+Cross-validation metrics included:
+
+* Mean CV R²
+* Mean CV MAE
+
+## 7. Test-Set Evaluation
+
+Final model performance was evaluated using:
+
+* Test R²
+* Test MAE
+* Test RMSE
+
+## 8. Model Interpretation
+
+Additional analysis was performed on the Decision Tree model, including:
+
+* Overfitting analysis
+* Actual vs Predicted analysis
+* Residual analysis
+* Feature importance
+
+## 9. Data Visualization
+
+The project includes visualizations comparing:
+
+* Model performance
+* Actual vs Predicted Starting Salary
+* Residuals
+* Feature importance
+* Internships and Starting Salary
+* Years to Promotion and Starting Salary
+* Starting Salary by Professional Level
+
+## 10. Tableau Dashboard
+
+An interactive Tableau dashboard was developed to communicate the main findings in a business-oriented way.
+
+The dashboard connects:
+
+**Education → Skills → Career Development → Starting Salary → Machine Learning Insights**
+
+---
+
+# 📈 Model Performance
+
+The six regression models were compared using 5-fold cross-validation and test-set metrics.
+
+| Model                        |     CV R² | CV MAE (€) |   Test R² | Test MAE (€) | Test RMSE (€) |
+| ---------------------------- | --------: | ---------: | --------: | -----------: | ------------: |
+| **Decision Tree Regression** | **0.904** | **€2,405** | **0.978** |   **€1,653** |    **€2,136** |
+| Gradient Boosting Regression |     0.891 |     €2,539 |     0.978 |       €1,653 |        €2,136 |
+| Random Forest Regression     |     0.869 |     €2,741 |     0.978 |       €1,736 |        €2,159 |
+| Ridge Regression             |     0.802 |     €3,077 |     0.895 |       €3,491 |        €4,681 |
+| Lasso Regression             |     0.799 |     €3,150 |     0.900 |       €3,033 |        €4,561 |
+| Linear Regression            |     0.791 |     €3,885 |     0.900 |       €3,033 |        €4,561 |
+
+### Key finding
+
+The **tree-based models substantially outperformed the linear and regularized regression models**.
+
+Decision Tree Regression achieved the strongest cross-validation performance and provided the best overall balance between predictive accuracy and generalization.
+
+---
+
+# 🏆 Final Model Selection
+
+## Decision Tree Regression
+
+The Decision Tree Regression model was selected as the final predictive model.
+
+Its performance was:
+
+* **Mean CV R²: 0.904**
+* **Mean CV MAE: €2,405**
+* **Test R²: 0.978**
+* **Test MAE: €1,653**
+* **Test RMSE: €2,136**
+
+The model explained approximately **97.8% of the variation in Starting Salary within the test set**.
+
+However, this result should not be interpreted as a 97.8% certainty of salary prediction. R² measures the proportion of variance explained by the model.
+
+---
+
+# 🔎 Feature Importance
+
+The Decision Tree feature importance analysis identified the following relative importance:
+
+| Feature                | Importance |
+| ---------------------- | ---------: |
+| **Years to Promotion** |  **77.9%** |
+| Gender Male            |      17.3% |
+| Internships Completed  |       4.8% |
+| Current Job Level Mid  |       0.0% |
+
+### Key Insight
+
+**Years to Promotion was by far the most important feature used by the Decision Tree model.**
+
+This suggests that career progression has a strong relationship with Starting Salary in this dataset.
+
+Internships showed a smaller contribution to the model, while `Current_Job_Level_Mid` had no measurable importance within this particular Decision Tree.
+
+These results should be interpreted as **model associations rather than causal effects**.
+
+---
+
+# 📊 Main Findings
+
+Several important conclusions emerged from the analysis.
+
+### 1. Tree-based models performed best
+
+Decision Tree, Gradient Boosting and Random Forest achieved substantially stronger results than Linear, Ridge and Lasso Regression.
+
+This suggests that the relationships between the available variables and Starting Salary may contain **non-linear patterns** that are better captured by tree-based models.
+
+### 2. Career progression was highly important
+
+`Years_to_Promotion` was the strongest feature in the final Decision Tree model, accounting for approximately **77.9% of the model's feature importance**.
+
+### 3. Predictive performance was strong
+
+The final Decision Tree achieved a Test R² of approximately **0.978**, with a Test MAE of approximately **€1,653**.
+
+### 4. The dataset is small
+
+The dataset contains only **44 observations**.
+
+Therefore, the strong predictive results should be interpreted cautiously and should not be generalized to the entire Marketing profession without additional data.
+
+---
+
+# 💡 Business & Career Insights
+
+From a Marketing and Data Analytics perspective, this project demonstrates the value of being able to transform raw career data into actionable insights.
+
+Data Analytics can help professionals:
+
+* Analyse career trends.
+* Identify relationships between professional characteristics and outcomes.
+* Evaluate hypotheses using data.
+* Build predictive models.
+* Communicate findings through dashboards.
+* Support evidence-based career and business decisions.
+
+The project therefore demonstrates a practical connection between **Marketing knowledge and Data Analytics skills**.
+
+A Marketing professional who understands data can move beyond reporting what happened and begin to investigate **why patterns occur and what may happen next**.
+
+---
+
+# ⚠️ Limitations
+
+The results should be interpreted within the limitations of the dataset and methodology.
+
+### Small sample size
+
+The dataset contains only **44 observations**, which limits the generalizability of the findings.
+
+### No causal inference
+
+The analysis identifies relationships and predictive patterns, but it does not prove that a particular characteristic directly causes a higher salary.
+
+For example, the analysis does **not** prove that learning Data Analytics causes Marketing Professionals to earn higher salaries.
+
+### Limited feature set
+
+The final Machine Learning model used four encoded features. Additional variables and larger datasets could potentially provide a more comprehensive representation of career success.
+
+### Salary context
+
+Starting Salary is used as the main measurable career outcome in this project. Career success is broader than salary and may also include satisfaction, work-life balance, job opportunities and professional growth.
+
+---
+
+# 🎯 Final Conclusion
+
+The project demonstrates how Data Analytics and Machine Learning can be applied to career-related questions that are relevant to Marketing Professionals.
+
+The analysis showed that **tree-based Machine Learning models provided the strongest predictive performance**, with Decision Tree Regression selected as the final model.
+
+The most important feature identified by the Decision Tree was **Years to Promotion**, suggesting that career progression is strongly associated with Starting Salary in this dataset.
+
+Therefore, the project does not conclude that Data Analytics directly causes higher salaries. Instead, it demonstrates that **data skills provide Marketing Professionals with a powerful framework for analysing career outcomes, identifying important factors and supporting evidence-based decisions**.
+
+This supports the broader idea that learning Data Analytics can be a valuable complement to a Marketing background, particularly as marketing becomes increasingly data-driven.
+
+---
+
+# 🚀 Future Improvements
+
+---
+
+# 📁 Repository Structure
+
+```text
+marketing-career-success-ml/
+
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   └── 01_data_understanding.ipynb
+│
+├── images/
+│
+├── tableau/
+│
+├── requirements.txt
+│
+├── README.md
+│
+└── .gitignore
+```
+
+> The repository structure should be updated to match the actual files committed to GitHub.
+
+---
+
+# 👩‍💻 Author
+
+**Teresa Mendes Coelho**
+
+Ironhack Data Analytics Bootcamp
+2026
+
+---
+
+## 📌 Project Takeaway
+
+> **Data Analytics does not simply provide tools for analysing business performance. It provides Marketing Professionals with the ability to transform data into evidence, insights and predictive information that can support better decisions.**
