@@ -1,218 +1,353 @@
 # 📊 Should Marketing Professionals Learn Data Analytics?
 
-### A Machine Learning Analysis of Education, Technical Skills and Career Success
+Should Marketing Professionals Learn Data Analytics?
 
-## 📖 Project Overview
+A Machine Learning Analysis of Education, Technical Skills and Career Success
 
-In today's job market, marketing professionals are increasingly expected to possess analytical and technical skills alongside traditional marketing expertise. As organizations become more data-driven, professionals with knowledge of SQL, Python, Power BI, Tableau, and Machine Learning often have access to broader career opportunities and higher-paying positions.
+Teresa Mendes Coelho
+Ironhack Data Analytics Bootcamp • 2026
 
-This project investigates how education, work experience, and technical skills influence career success by applying Machine Learning techniques to predict salary and identify the factors that contribute most to professional growth.
+Project Overview
 
-The motivation behind this project comes from my own career transition from Marketing to Data Analytics through the Ironhack Data Analytics Bootcamp. Rather than relying on personal opinions, this project aims to answer an important business question using data.
+This project investigates whether education, professional experience, measurable skills and career-development indicators are associated with Starting Salary.
 
----
+The project combines a Marketing perspective with Data Analytics and Machine Learning to answer:
 
-# 🎯 Business Problem
+Should Marketing Professionals learn Data Analytics?
 
-Many marketing professionals ask themselves:
+The objective is not to prove that Data Analytics directly causes higher salaries. It is to identify relationships, evaluate hypotheses, compare predictive models and translate results into business insights.
 
-> **Is investing time and money in learning Data Analytics worth it?**
+Business Context
 
-This project aims to explore that question by building Machine Learning models capable of predicting salary using variables such as education, work experience, certifications, technical skills, company characteristics, and other relevant features.
+Marketing is increasingly data-driven. Professionals are expected to understand performance data, identify patterns, evaluate evidence and support business decisions.
 
-The ultimate objective is to identify which factors have the greatest impact on career success and whether technical skills provide a measurable advantage.
+The project combines:
 
----
+Marketing and business knowledge
 
-# ❓ Research Questions
+SQL
 
-* Which factors contribute most to higher salaries?
-* Does education level significantly influence salary?
-* How important are technical skills compared to years of experience?
-* Which variables are the strongest predictors of career success?
-* Can Machine Learning accurately predict salary based on professional characteristics?
+Python / Pandas
 
----
+Statistics
 
-# 📂 Dataset
+Machine Learning
 
-The project will use publicly available datasets containing information about employment, education, technical skills, and salaries.
+Tableau
 
-Potential data sources include:
+Data storytelling
 
-* Job Salary Prediction Dataset (Kaggle)
-* AI & Data Science Job Market Dataset
-* Additional public employment datasets if required
+Research Questions
 
----
+Which factors are most strongly associated with Starting Salary?
 
-# 🛠 Technologies Used
+How does career progression relate to Starting Salary?
 
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* XGBoost (optional)
-* Git & GitHub
+What role do internships and projects play in salary outcomes?
 
----
+How are certifications associated with Starting Salary?
 
-# 📊 Project Workflow
+Can Machine Learning predict Starting Salary?
 
-## 1. Business Understanding
+Which regression model performs best?
 
-* Define the business problem
-* Identify research questions
-* Establish project objectives
+What can data-driven analysis teach Marketing Professionals about career development?
 
-## 2. Data Collection
+Dataset
 
-* Acquire datasets
-* Understand available variables
-* Assess data quality
+Education & Career Success
 
-## 3. Data Cleaning
+The SQL validation layer contains 400 records in education_career_success.
+The final Machine Learning presentation reports 44 observations and 17 original variables for modelling.
 
-* Handle missing values
-* Remove duplicates
-* Correct data types
-* Detect and treat outliers
+Main variables include:
+Age, Gender, University_GPA, Field_of_Study, Internships_Completed, Projects_Completed, Certifications, Soft_Skills_Score, Networking_Score, Job_Offers, Starting_Salary, Career_Satisfaction, Years_to_Promotion, Current_Job_Level, Work_Life_Balance, Entrepreneurship.
 
-## 4. Exploratory Data Analysis (EDA)
+Target: Starting_Salary
 
-* Salary distributions
-* Education levels
-* Experience analysis
-* Correlation analysis
-* Feature relationships
-* Visualizations
+Analytical Workflow
 
-## 5. Feature Engineering
+Business Question → SQL → Python/Pandas → EDA → Statistical Analysis → Machine Learning → Model Evaluation → Tableau → Business Insights
 
-* Encoding categorical variables
-* Scaling numerical variables
-* Feature selection
-* Creation of new meaningful features
+SQL / MySQL
 
-## 6. Machine Learning
+Used for data validation, exploration, filtering, grouping and aggregation before Python/ML/Tableau.
 
-Models to be evaluated include:
+SQL analysis included:
 
-* Linear Regression
-* Decision Tree Regressor
-* Random Forest Regressor
-* Gradient Boosting Regressor
-* XGBoost (optional)
+total records
 
----
+average/minimum/maximum salary
 
-# ⚙ Hyperparameter Tuning
+salary by Field of Study
 
-Model optimization techniques include:
+salary by Current Job Level
 
-* GridSearchCV
-* Cross Validation
+internships, projects and certifications vs salary
 
----
+Years to Promotion vs salary
 
-# 📈 Model Evaluation
+University GPA groups vs salary
 
-Performance will be evaluated using:
+Career Success Profile
 
-* R² Score
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
+Marketing-specific analysis
 
-Feature importance analysis will also be performed to identify the variables with the greatest influence on salary prediction.
+SQL results
 
----
+400 records
 
-# 💼 Expected Business Insights
+Average Starting Salary: 87,562.50 in the dataset's source currency
 
-The project aims to answer questions such as:
+Minimum: 31,000
 
-* Which professional characteristics are most strongly associated with higher salaries?
-* Is education level more important than work experience?
-* Do technical skills significantly improve salary predictions?
-* Which skills appear to have the greatest impact on career success?
+Maximum: 152,000
 
-These findings may help professionals make informed decisions about investing in additional education and technical training.
+Average Starting Salary by Current Job Level
 
----
+Level
 
-# 📁 Repository Structure
+Average
 
-```
-marketing-career-success-ml/
+Senior
 
-│
+141,423.73
+
+Mid
+
+87,291.19
+
+Entry
+
+48,725.00
+
+SQL is a Data Analytics/preparation layer; the Machine Learning models are developed in Python.
+
+Python / Pandas
+
+Cleaning, EDA and feature engineering.
+
+Statsmodels
+
+OLS statistical regression analysis.
+
+OLS results:
+
+R² = 0.899
+
+Adjusted R² = 0.889
+
+Scikit-learn
+
+Six regression models:
+
+Linear Regression
+
+Ridge Regression
+
+Lasso Regression
+
+Decision Tree Regression
+
+Random Forest Regression
+
+Gradient Boosting Regression
+
+Evaluation:
+
+5-fold Cross-Validation
+
+R²
+
+MAE
+
+RMSE
+
+Tableau
+
+Business-oriented visualisation and dashboard communication.
+
+Exploratory & Statistical Findings
+
+Correlation with Starting Salary:
+
+University GPA: 0.917
+
+Career Satisfaction: 0.889
+
+Job Offers: 0.885
+
+Internships Completed: 0.849
+
+Certifications: 0.849
+
+Projects Completed: 0.839
+
+Current Job Level: 0.658
+
+Years to Promotion: -0.891
+
+These are associations, not causal relationships.
+
+Machine Learning Results
+
+Model
+
+CV R²
+
+CV MAE
+
+Test R²
+
+Test MAE
+
+Decision Tree
+
+0.904
+
+€2,405
+
+0.978
+
+€1,653
+
+Gradient Boosting
+
+0.891
+
+€2,539
+
+0.978
+
+€1,653
+
+Random Forest
+
+0.869
+
+€2,741
+
+0.978
+
+€1,736
+
+Ridge
+
+0.802
+
+€3,077
+
+0.895
+
+€3,491
+
+Lasso
+
+0.799
+
+€3,150
+
+0.900
+
+€3,033
+
+Linear Regression
+
+0.791
+
+€3,885
+
+0.900
+
+€3,033
+
+Best Model: Decision Tree Regression
+
+CV R²: 0.904
+
+Test R²: 0.978
+
+Test MAE: €1,653
+
+Test RMSE: €2,136
+
+Tree-based models substantially outperformed the linear approaches on this dataset.
+
+Feature Importance
+
+The Decision Tree identified:
+
+Years to Promotion as the strongest feature
+
+Gender Male as another important feature
+
+Internships Completed as a meaningful contributor
+
+Current Job Level Mid with comparatively lower contribution
+
+Feature importance represents predictive contribution within a model and does not establish causation.
+
+Business & Marketing Insights
+
+Data-driven thinking: Data Analytics helps Marketing professionals move beyond reporting and analyse patterns.
+
+Career progression: Years to Promotion was strongly associated with salary and was the strongest feature in tree-based modelling.
+
+Practical experience: Internships and projects showed strong positive associations with Starting Salary.
+
+Marketing + Data: Analytics provides a framework to Analyse → Identify Patterns → Build Models → Interpret Results → Support Decisions.
+
+Potential business applications include talent acquisition, employer branding, career development, workforce planning and data-driven talent marketing.
+
+Limitations
+
+The final ML dataset contains only 44 observations.
+
+Results should not be generalized to the entire Marketing profession.
+
+Associations and predictive patterns are not causal relationships.
+
+Data Analytics itself is not directly measured in the dataset.
+
+Starting Salary is only one measure of career success.
+
+Strong correlations may indicate multicollinearity.
+
+Very high tree-model performance should be interpreted cautiously given the small modelling sample.
+
+Larger and more diverse datasets would strengthen the analysis.
+
+Conclusion
+
+YES — Marketing Professionals can benefit from learning Data Analytics as a complementary skill.
+
+The project demonstrates how Marketing expertise can be combined with SQL, Python, Statistics, Machine Learning and Tableau to transform data into evidence and business insights.
+
+It does not prove that learning Data Analytics causes higher salaries.
+
+Repository Structure
+
+project/
 ├── data/
-│   ├── raw/
-│   └── processed/
-│
 ├── notebooks/
-│   ├── 01_business_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_eda.ipynb
-│   ├── 04_feature_engineering.ipynb
-│   ├── 05_modeling.ipynb
-│   └── 06_model_evaluation.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── models.py
-│   ├── evaluation.py
-│   └── visualization.py
-│
-├── presentation/
-│
-├── images/
-│
-├── requirements.txt
-│
+├── sql/
+│   └── career_success_analysis.sql
+├── vscode
+  └── data_analysis
+  └── machine_learning
+├── visualizations/
 ├── README.md
-│
-└── .gitignore
-```
+└── ...
 
----
+Tools
 
-# 🚀 Future Improvements
-Future versions of the project could:
+MySQL / SQL • Python • Pandas • Machine_Learning • Tableau • Jupyter Notebook • Git / GitHub
 
-Increase the sample size substantially.
+Final Takeaway
 
-Include data from multiple countries and industries.
+Marketing + Data Analytics = Business knowledge + evidence + predictive thinking
 
-Add more detailed technical-skill variables.
-
-Compare Marketing professionals with other professional groups.
-
-Include longitudinal career data.
-
-Investigate additional measures of career success beyond Starting Salary.
-
-Test additional Machine Learning algorithms.
-
-Perform more extensive hyperparameter tuning.
-
-Deploy the final predictive model as an interactive application.
-
-Expand the Tableau dashboard with additional business intelligence views.. 
-
-
----
-
-# 👩‍💻 Author
-
-**Teresa Mendes Coelho**
-
-
+Business Question → SQL → Python → Statistics → Machine Learning → Tableau → Business Recommendations
 
 
 💡 Recommendations
@@ -225,6 +360,11 @@ Continuous learning through bootcamps and certifications can complement traditio
 
 This gives your project a real business conclusion, which is exactly what companies expect from a data analyst—not just predicting outcomes, but turning them into actionable recommendations.
 
+
 Ironhack Data Analytics Bootcamp
 
 2026
+
+# 👩‍💻 Author
+
+**Teresa Mendes Coelho**
