@@ -39,7 +39,7 @@ https://trello.com/b/kPnXr8jv/the-importance-and-correlation-between-education-m
 
 **Purpose**
 
-* Main dataset for Machine Learning.
+* Main candidate dataset for Machine Learning.
 * Predict salary using education, work experience, certifications, technical skills, and other professional characteristics.
 * Analyze which variables contribute most to career success.
 
@@ -65,191 +65,15 @@ https://www.kaggle.com/datasets/shree0910/ai-and-data-science-job-market-dataset
 
 ---
 
-# 💻 Software
+# 📊 Final Dataset & SQL Database
 
-Development Environment
+The final project uses an **Education & Career Success** dataset containing career, education, professional development and salary-related variables.
 
-* Visual Studio Code
-* Jupyter Notebook
-* Python 3.x
-* Git
-* GitHub
-* GitHub Desktop
-* Google Chrome
+The dataset was also imported into **MySQL** for SQL-based data validation and exploratory analysis.
 
----
+### MySQL Database
 
-# 📚 Python Libraries
-
-## Data Manipulation
-
-* pandas
-* numpy
-
-## Data Visualization
-
-* matplotlib
-* seaborn
-
-## Machine Learning
-
-* scikit-learn
-* xgboost *(optional)*
-
-## Model Evaluation
-
-* sklearn.metrics
-* sklearn.model_selection
-
----
-
-# 🤖 Machine Learning Models
-
-The following models will be explored and compared:
-
-* Linear Regression
-* Decision Tree Regressor
-* Random Forest Regressor
-* Gradient Boosting Regressor
-* XGBoost *(optional)*
-
----
-
-# ⚙️ Machine Learning Techniques
-
-The project will include:
-
-* Data Cleaning
-* Exploratory Data Analysis (EDA)
-* Feature Engineering
-* Feature Selection
-* One-Hot Encoding
-* Label Encoding
-* Standardization / Scaling
-* Train-Test 
-* Cross Validation
-* GridSearchCV
-* Hyperparameter Tuning
-* Feature Importance Analysis
-
----
-
-# 📈 Evaluation Metrics
-
-Model performance will be evaluated using:
-
-* R² Score
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
-
----
-
-# 🌐 Websites & References
-
-## Project Management
-
-* Trello
-
-  * https://trello.com
-  * Project Board:
-    https://trello.com/b/kPnXr8jv/the-importance-and-correlation-between-education-marketing-degree-masters-degree-data-analytics-bootcamp-and-career-success
-
----
-
-## Data Sources
-
-* Kaggle
-
-  * https://www.kaggle.com
-
----
-
-## Development
-
-* GitHub
-
-  * https://github.com
-
----
-
-## Documentation
-
-* Python Documentation
-
-  * https://docs.python.org
-
-* Pandas Documentation
-
-  * https://pandas.pydata.org/docs/
-
-* NumPy Documentation
-
-  * https://numpy.org/doc/
-
-* Scikit-learn Documentation
-
-  * https://scikit-learn.org/stable/
-
-* Matplotlib Documentation
-
-  * https://matplotlib.org/stable/
-
-* Seaborn Documentation
-
-  * https://seaborn.pydata.org/
-
-* XGBoost Documentation
-
-  * https://xgboost.readthedocs.io/
-
----
-
-## Learning Resources
-
-* Ironhack Course Materials
-* Stack Overflow
-
-  * https://stackoverflow.com
-
----
-
-# 📁 Repository Structure
+**Database:**
 
 ```text
-marketing-career-success/
-
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── 01_business_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_eda.ipynb
-│   ├── 04_feature_engineering.ipynb
-│   ├── 05_modeling.ipynb
-│   └── 06_model_evaluation.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── models.py
-│   ├── evaluation.py
-│   └── visualization.py
-│
-├── presentation/
-│
-├── images/
-│
-├── requirements.txt
-├── README.md
-├── PROJECT_RESOURCES.md
-└── .gitignore
-```
-
----
-
-# 📝 Notes
-
-This document will be updated throughout the project as additional datasets, software, libraries, references, and resources are incorporated.
+career_success
