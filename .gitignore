@@ -1,57 +1,122 @@
+# ============================================================
 # Python
+# ============================================================
 
-**pycache**/
+__pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
-
+# Python virtual environments
 venv/
 .venv/
 env/
+ENV/
+.env/
 
+# ============================================================
 # Jupyter Notebook
+# ============================================================
 
 .ipynb_checkpoints/
 
+# ============================================================
 # VS Code
+# ============================================================
 
 .vscode/
+*.code-workspace
+
+# ============================================================
+# Operating System
+# ============================================================
 
 # macOS
-
 .DS_Store
 
 # Windows
-
 Thumbs.db
+Desktop.ini
 
-# Environment variables
+# ============================================================
+# Environment Variables & Secrets
+# ============================================================
 
 .env
+.env.*
+!.env.example
 
+# ============================================================
 # Logs
+# ============================================================
 
 *.log
 
-# Build
+# ============================================================
+# Build / Distribution
+# ============================================================
 
 build/
 dist/
+*.egg-info/
 
-# Python cache
+# ============================================================
+# Testing / Coverage
+# ============================================================
 
 .pytest_cache/
-
-# Coverage
-
 .coverage
+.coverage.*
+htmlcov/
 
-# Temporary files
+# ============================================================
+# Temporary Files
+# ============================================================
 
 *.tmp
+*.temp
 *.bak
+*.swp
+*.swo
+~$*
 
-# Data files (optional)
+# ============================================================
+# Python Tools / Caches
+# ============================================================
 
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# ============================================================
+# Data Files
+# ============================================================
+
+# Keep the project datasets visible if they are intentionally
+# committed to GitHub.
+#
+# If the raw dataset should NOT be uploaded, uncomment:
+#
 # data/raw/
+#
+# If processed/generated datasets should not be uploaded:
+#
+# data/processed/
+
+# ============================================================
+# Large / Generated Files
+# ============================================================
+
+# Uncomment these only if you decide not to store large files
+# in GitHub:
+#
+# *.zip
+# *.rar
+# *.7z
+
+# ============================================================
+# Tableau Temporary / Backup Files
+# ============================================================
+
+# Tableau temporary files
+*.twb~ 
+*.twbx~
