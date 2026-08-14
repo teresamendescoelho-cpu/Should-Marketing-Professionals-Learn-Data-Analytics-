@@ -8,6 +8,11 @@ numpy
 matplotlib
 seaborn
 
+# Statistical analysis
+
+statsmodels
+scipy
+
 # Machine Learning
 
 scikit-learn
@@ -16,17 +21,15 @@ scikit-learn
 
 xgboost
 
+# Model explainability
+
+shap
+
 # Jupyter
 
 notebook
 jupyterlab
 
-# Model explainability
+# Model evaluation and utilities
 
-shap
-
-# Utilities
-
-scipy
 joblib
-
