@@ -442,7 +442,7 @@ The original project README referenced public data sources and the Ironhack lear
 ## 🎓 Project & Learning Context
 
 - **Ironhack — Data Analytics Bootcamp**  
-  https://www.ironhack.com/pt/data-analytics
+  https://www.ironhack.com/pt/data-analytics .
 
 The Ironhack Data Analytics programme covers technologies and concepts relevant to this project, including Git, Python, MySQL, statistical analysis, Machine Learning and Tableau. citeturn0search1turn0search3
 
